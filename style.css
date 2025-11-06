@@ -1,0 +1,253 @@
+/* ===== Reset & Variables ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #000;
+    --bg-color: #fff;
+    --text-color: #333;
+    --border-color: #ddd;
+    --spacing: 20px;
+    --max-width: 900px;
+    --font-serif: 'Georgia', 'Garamond', serif;
+    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #1a1a1a;
+        --text-color: #f0f0f0;
+        --border-color: #444;
+    }
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* ===== Typography ===== */
+h1, h2, h3 {
+    font-family: var(--font-serif);
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 2.5rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--primary-color);
+    transition: opacity 0.2s;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+/* ===== Layout ===== */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--spacing);
+}
+
+/* ===== Hero ===== */
+.hero {
+    background: linear-gradient(135deg, #f5f5f5 0%, #fafafa 100%);
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    .hero {
+        background: linear-gradient(135deg, #2a2a2a 0%, #1f1f1f 100%);
+    }
+}
+
+.hero h1 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+/* ===== Projects Section ===== */
+.projects {
+    margin: 80px 0;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.project-card {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: var(--bg-color);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+    .project-card:hover {
+        box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+    }
+}
+
+.project-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: var(--border-color);
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.project-card h3 {
+    margin: 20px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.project-card p {
+    margin: 0 20px 10px;
+}
+
+.problem {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.project-links {
+    margin: 20px;
+    margin-top: 15px;
+}
+
+.project-links a {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.project-links a:hover {
+    background: var(--primary-color);
+    color: var(--bg-color);
+    border-bottom: none;
+}
+
+/* ===== About Section ===== */
+.about {
+    margin: 80px 0;
+    line-height: 1.8;
+}
+
+.about p {
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+}
+
+/* ===== Contact Section ===== */
+.contact {
+    margin: 80px 0;
+    text-align: center;
+    padding: 40px;
+    background: var(--border-color);
+    border-radius: 4px;
+}
+
+.contact h2 {
+    border: none;
+    margin-top: 0;
+}
+
+.contact p {
+    font-size: 1.1rem;
+}
+
+.contact a {
+    margin: 0 15px;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid var(--border-color);
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+}
