@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heartbeat Sharing Wearable - Thuy Dung Nguyen</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" style="display: inline-block; margin: 20px 0;">← Back to Portfolio</a>
+
+        <h1>Heartbeat Sharing Wearable</h1>
+        
+        <section class="project-detail">
+            <h2>Overview</h2>
+            <p>
+                How can we create intimate connections through shared physiological rhythms? This project explores 
+                haptic communication as a form of non-verbal intimacy between two people. By translating one person's 
+                heartbeat into tactile vibrations felt by another, the wearable creates a subtle, continuous connection 
+                that exists below the threshold of conscious awareness.
+            </p>
+
+            <h2>Technical Implementation</h2>
+            <p>
+                <strong>Hardware:</strong> Arduino Mega, HC-05 Bluetooth module, custom vibrotactile actuators, 
+                soft silicone housing designed for comfortable skin contact
+            </p>
+            <p>
+                <strong>Software:</strong> Smartphone camera-based rPPG (remote photoplethysmography) for contactless 
+                heart rate detection, Arduino code for motor control and Bluetooth communication, UDP protocol for 
+                real-time data streaming
+            </p>
+            <p>
+                <strong>Key Challenge:</strong> Achieving consistent, continuous vibration that matches natural heartbeat 
+                rhythm (50-100 BPM). Solved by implementing a pulse interpolation system that maintains tempo between 
+                sensor readings, creating smooth heartbeat-like vibrations rather than discrete pulses.
+            </p>
+
+            <h2>Process & Iteration</h2>
+            <p>
+                Initial prototypes used direct sensor-to-motor mapping, which produced inconsistent vibrations. 
+                Through testing, I discovered that continuous tempo maintenance was crucial for creating a "felt presence" 
+                rather than just data transmission. I redesigned the system to interpolate between pulses, ensuring 
+                the receiving person experiences a steady heartbeat rhythm.
+            </p>
+            <p>
+                The housing went through three iterations: hard plastic (uncomfortable), fabric pouches (inconsistent contact), 
+                and finally soft skin-like silicone that maintains gentle pressure while allowing natural movement.
+            </p>
+
+            <h2>Outcome & Reflection</h2>
+            <p>
+                The final prototype successfully creates an intimate connection between two users, with testers reporting 
+                feelings of "presence" and "comfort" when receiving their partner's heartbeat. The device functions as 
+                a wearable that can be placed on arms, wrists, or torso for portable, table-top use.
+            </p>
+            <p>
+                <strong>Next Steps:</strong> Exploring multi-user networks (3+ people sharing heartbeats), investigating 
+                heart rate variability as emotional communication, and developing smaller form factors for everyday wear.
+            </p>
+
+            <h2>Gallery</h2>
+            <img src="../assets/heartbeat-prototype.jpg" alt="Wearable prototype with Arduino and vibration motors" style="max-width: 100%; margin: 20px 0;">
+            <img src="../assets/heartbeat-testing.jpg" alt="User testing the heartbeat sharing device" style="max-width: 100%; margin: 20px 0;">
+            <img src="../assets/heartbeat-detail.jpg" alt="Close-up of soft silicone housing" style="max-width: 100%; margin: 20px 0;">
+
+            <h2>Links & Resources</h2>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin: 10px 0;"><a href="https://github.com/julxng/heartbeat-wearable" target="_blank">→ GitHub Repository</a></li>
+                <li style="margin: 10px 0;"><a href="#" target="_blank">→ Video Documentation</a></li>
+                <li style="margin: 10px 0;"><a href="../assets/heartbeat-technical-doc.pdf" target="_blank">→ Technical Documentation (PDF)</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer style="margin-top: 80px; text-align: center; padding: 40px; border-top: 1px solid #ddd;">
+        <p>&copy; 2025 Thuy Dung Nguyen</p>
+    </footer>
+</body>
+</html>
