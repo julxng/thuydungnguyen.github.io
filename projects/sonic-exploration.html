@@ -4,14 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sonic Exploration - Thuy Dung Nguyen</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/logo.svg">
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <div class="container">
-        <a href="../index.html" style="display: inline-block; margin: 20px 0;">← Back to Portfolio</a>
+    <!-- Nav -->
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="../index.html" class="nav-logo">
+                <img src="../assets/logo.svg" alt="Julius Logo" class="logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#work">Work</a>
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container project-detail-page">
+        <a href="../index.html" class="back-link">← Back to Portfolio</a>
 
         <h1>Sonic Exploration</h1>
-        <p style="font-style: italic; color: #666;">Part of "Resonance of the Unseen" - Bard College Senior Project, December 2023</p>
+        <p style="font-style: italic; color: #6e6e73; margin-bottom: 40px;">Part of "Resonance of the Unseen" - Bard College Senior Project, December 2023</p>
         
         <section class="project-detail">
             <h2>Overview</h2>
@@ -24,8 +39,7 @@
             <p>
                 The installation features <strong>20 speakers</strong> arranged in space, each playing a distinct sound 
                 from nature, humanity, and our surroundings. Visitors must identify and locate each sound source, 
-                transforming passive listening into an active, playful puzzle. This sonic odyssey transcends mere 
-                listening—it becomes a vehicle for memory, a shared experience connecting the individual to the universal.
+                transforming passive listening into an active, playful puzzle.
             </p>
 
             <h2>Technical Implementation</h2>
@@ -53,25 +67,6 @@
                 <li>Press YELLOW button to STOP and reset</li>
             </ol>
 
-            <h2>Concept & Artistic Context</h2>
-            <p>
-                <em>Sonic Exploration</em> is part of <strong>"Resonance of the Unseen"</strong>, my Bard College 
-                senior exhibition exploring sensory perception through sound, scent, and touch. The exhibition 
-                confronts the sensory saturation of contemporary life by elevating the unobserved aspects of perception, 
-                inviting a rediscovery of elemental experiences.
-            </p>
-            <p>
-                The auditory installation challenges visitors to pinpoint sounds in space, emphasizing the importance 
-                of <strong>mindful presence</strong>. Each sound—birdsong, footsteps, ocean waves, breathing—represents 
-                a thread in the tapestry of life. By requiring active identification rather than passive consumption, 
-                the work reframes listening as an act of discovery.
-            </p>
-            <p>
-                The piece draws inspiration from sound artists like <strong>Janet Cardiff</strong> (spatial audio walks) 
-                and <strong>Ryoji Ikeda</strong> (data sonification), while incorporating game-like interaction to make 
-                the experience playful and accessible.
-            </p>
-
             <h2>Development Process</h2>
             <p>
                 <strong>Technical Challenges:</strong> Coordinating 20 independent audio channels while maintaining 
@@ -81,14 +76,7 @@
             </p>
             <p>
                 <strong>Sound Curation:</strong> Selecting 20 sounds that were distinctive yet familiar required extensive 
-                testing. Sounds needed to be recognizable but not obvious—inviting curiosity without frustration. 
-                Categories include natural sounds (rain, wind, birds), human sounds (footsteps, breathing, laughter), 
-                and environmental sounds (traffic, doors, water).
-            </p>
-            <p>
-                <strong>Spatial Design:</strong> Speaker placement created a three-dimensional sound field that required 
-                visitors to move through space. This physical navigation paralleled the cognitive navigation of identifying 
-                sounds, making the experience fully embodied rather than just auditory.
+                testing. Sounds needed to be recognizable but not obvious—inviting curiosity without frustration.
             </p>
 
             <h2>Exhibition & Response</h2>
@@ -97,61 +85,28 @@
                 experienced alone or collaboratively, with groups often working together to identify sounds, creating 
                 spontaneous social bonding through shared listening.
             </p>
-            <p>
-                Visitors reported heightened awareness of everyday sounds after experiencing the installation—noticing 
-                acoustic details they'd previously overlooked. The game-like structure made the meditative act of deep 
-                listening accessible and engaging, removing the intimidation often associated with experimental sound art.
-            </p>
-
-            <h2>Outcome & Reflection</h2>
-            <p>
-                <em>Sonic Exploration</em> successfully transformed listening from passive reception to active discovery. 
-                The installation demonstrated how technology can facilitate mindfulness rather than distract from it—
-                using Arduino and MaxMSP not to create novel sounds, but to heighten awareness of sounds we've always 
-                heard but rarely noticed.
-            </p>
-            <p>
-                <strong>Next Directions:</strong> Exploring adaptive difficulty (sounds become more subtle as visitors 
-                improve), location-specific sound libraries (site-specific versions using local acoustic environments), 
-                and networked versions where multiple installations communicate, creating a distributed sonic experience 
-                across locations.
-            </p>
 
             <h2>Gallery</h2>
-            <img src="../assets/sonic-exploration-full.jpg" alt="Full installation view showing speakers and buttons" style="max-width: 100%; margin: 20px 0;">
-            <img src="../assets/sonic-exploration-interaction.jpg" alt="Visitor pressing button during interaction" style="max-width: 100%; margin: 20px 0;">
-            <img src="../assets/sonic-exploration-detail.jpg" alt="Close-up of LED buttons and speaker housing" style="max-width: 100%; margin: 20px 0;">
-            <img src="../assets/sonic-exploration-space.jpg" alt="Installation space showing spatial distribution" style="max-width: 100%; margin: 20px 0;">
+            <img src="../assets/sonic-exploration-full.jpg" alt="Full installation view" style="max-width: 100%; margin: 20px 0;">
+            <img src="../assets/sonic-exploration-interaction.jpg" alt="Visitor interaction" style="max-width: 100%; margin: 20px 0;">
 
             <h2>Documentation</h2>
-            <div style="margin: 20px 0;">
-                <iframe width="100%" height="400" src="https://www.youtube.com/embed/HjSyqFlPndg" frameborder="0" allowfullscreen></iframe>
-                <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">Video documentation of visitor interaction</p>
+            <div style="margin: 30px 0;">
+                <iframe width="100%" height="450" src="https://www.youtube.com/embed/HjSyqFlPndg" frameborder="0" allowfullscreen></iframe>
             </div>
 
-            <h2>Links & Resources</h2>
-            <ul style="list-style: none; padding: 0;">
-                <li style="margin: 10px 0;"><a href="https://github.com/julxng/Sonic-Exploration" target="_blank">→ GitHub Repository (Arduino + MaxMSP Code)</a></li>
-                <li style="margin: 10px 0;"><a href="https://youtu.be/HjSyqFlPndg" target="_blank">→ Video Documentation</a></li>
-                <li style="margin: 10px 0;"><a href="../assets/resonance-of-the-unseen-catalog.pdf" target="_blank">→ Full Exhibition Catalog (PDF)</a></li>
-                <li style="margin: 10px 0;"><a href="../assets/senior-project-statement.pdf" target="_blank">→ Artist Statement</a></li>
-            </ul>
-
-            <h2>Part of "Resonance of the Unseen"</h2>
-            <p>
-                This installation was one of four interconnected works exploring sensory perception:
-            </p>
-            <ul>
-                <li><strong>Sonic Exploration</strong> - Interactive sound identification</li>
-                <li><strong>Scented Narratives</strong> - 58 3D-printed nose sculptures paired with imagined scents</li>
-                <li><strong>Clay Echoes</strong> - Fired clay slab preserving 200+ footprint imprints</li>
-                <li><strong>Can I Step On It?</strong> - 54-minute ceiling projection documenting ephemeral traces</li>
-            </ul>
+            <h2>Links</h2>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px;">
+                <a href="https://github.com/julxng/Sonic-Exploration" target="_blank" class="btn-primary">GitHub Repository</a>
+                <a href="https://youtu.be/HjSyqFlPndg" target="_blank" class="btn-primary">Video Documentation</a>
+            </div>
         </section>
     </div>
 
-    <footer style="margin-top: 80px; text-align: center; padding: 40px; border-top: 1px solid #ddd;">
-        <p>&copy; 2025 Thuy Dung Nguyen</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Thuy Dung Nguyen</p>
+        </div>
     </footer>
 </body>
 </html>
