@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thuy Dung Nguyen - Artist & Creative Technologist</title>
-    <!-- Tailwind CSS + DaisyUI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.24/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Portfolio of Thuy Dung Nguyen - Studio artist exploring haptic interfaces, biosensing, and interactive sound.">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <!-- Hero Section -->
     <header class="hero">
@@ -24,29 +22,27 @@
         <section class="projects">
             <h2>Work</h2>
             <div class="project-grid">
-                <!-- PROJECT 1: Heartbeat Sharing Wearable -->
+                <!-- PROJECT 1: Heartbeat Wearable -->
                 <article class="project-card">
                     <div class="project-image">
                         <img src="assets/heartbeat-wearable.jpg" alt="Heartbeat sharing wearable device">
                     </div>
-                    <h3>Would You Understand</h3>
-                    <p class="problem"><strong>Question:</strong> How can we create intimate connections through shared physiological rhythms?</p>
-                    <p class="description">A two-person prototype that captures heartbeats via smartphone camera (rPPG) and transmits them as haptic vibrations through Bluetooth-connected wearable panels. Built with Arduino, vibrotactile actuators, and custom soft-skin housing.</p>
-                    <div class="project-links">
-                        <a href="projects/heartbeat-wearable.html">View Project →</a>
+                    <div class="project-content">
+                        <h3>Would You Understand</h3>
+                        <p class="project-description">A two-person prototype that captures heartbeats via smartphone camera and transmits them as haptic vibrations. Built with Arduino and vibrotactile actuators.</p>
+                        <a href="projects/wouldyouunderstand.html" class="project-link">View Project →</a>
                     </div>
                 </article>
 
                 <!-- PROJECT 2: Sonic Exploration -->
                 <article class="project-card">
                     <div class="project-image">
-                        <img src="assets/sonic-exploration.jpg" alt="Interactive sound installation with 20 speakers">
+                        <img src="assets/sonic-exploration.jpg" alt="Interactive sound installation">
                     </div>
-                    <h3>Sonic Exploration</h3>
-                    <p class="problem"><strong>Question:</strong> How can we rediscover mindful presence through the sounds of everyday life?</p>
-                    <p class="description">An interactive sound installation featuring 20 speakers, Arduino hardware, and MaxMSP. Visitors identify sounds from nature, humanity, and surroundings in a playful sonic puzzle that challenges perception and memory.</p>
-                    <div class="project-links">
-                        <a href="projects/sonic-exploration.html">View Project →</a>
+                    <div class="project-content">
+                        <h3>Sonic Exploration</h3>
+                        <p class="project-description">Interactive sound installation with 20 speakers and Arduino. Visitors identify sounds in a playful sonic puzzle that challenges perception and memory.</p>
+                        <a href="projects/sonic-exploration.html" class="project-link">View Project →</a>
                     </div>
                 </article>
             </div>
@@ -57,35 +53,28 @@
             <h2>About</h2>
             <p>
                 I'm a studio artist who codes, working at the intersection of haptic interfaces, biosensing, and interactive sound. 
-                My practice explores how technology can create new forms of intimacy, mindfulness, and embodied experience through 
-                physiological data, tactile feedback, and spatial audio.
+                My practice explores how technology can create new forms of intimacy, mindfulness, and embodied experience.
             </p>
             <p>
                 I work primarily with Arduino hardware, vibrotactile actuators, smartphone sensing (rPPG), MaxMSP, and multi-channel 
-                audio systems. My approach emphasizes rapid prototyping, user-centered design, and exploring the emotional and 
-                perceptual dimensions of technology. Currently developing projects for applications to creative technology graduate 
-                programs including MIT Media Lab.
+                audio systems. Currently developing projects for applications to creative technology graduate programs including MIT Media Lab.
             </p>
-            <p>
-                <strong>Education:</strong> BA Studio Arts, Bard College (2023)
-            </p>
+            <p><strong>Education:</strong> BA Studio Arts, Bard College (2023)</p>
         </section>
 
         <!-- Contact Section -->
         <section class="contact">
             <h2>Get in Touch</h2>
-            <p>
-                <a href="mailto:your.email@example.com">Email</a> • 
-                <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a> • 
+            <div class="contact-links">
+                <a href="mailto:your.email@example.com">Email</a>
+                <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a>
                 <a href="https://github.com/julxng" target="_blank">GitHub</a>
-            </p>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Thuy Dung Nguyen. All rights reserved.</p>
+        <p>© 2025 Thuy Dung Nguyen</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
