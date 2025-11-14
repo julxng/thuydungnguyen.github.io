@@ -1,4 +1,4 @@
-/* ===== Apple-style Portfolio ===== */
+/* ===== Apple-style Portfolio with Yellow Accent ===== */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +9,8 @@
     --black: #1d1d1f;
     --white: #f5f5f7;
     --gray: #86868b;
-    --blue: #0071e3;
+    --yellow: #FFD600;  /* Your logo yellow! */
+    --yellow-dark: #E6C200;
     --sf-pro: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
 }
 
@@ -42,24 +43,19 @@ body {
 }
 
 .nav-logo {
-    font-size: 21px;
-    font-weight: 600;
-    color: var(--black);
-    text-decoration: none;
-    letter-spacing: -0.02em;
-}
-
-.logo-img {
-    height: 32px;
-    width: auto;
     display: block;
     transition: opacity 0.2s;
 }
 
-.nav-logo:hover .logo-img {
+.nav-logo:hover {
     opacity: 0.7;
 }
 
+.logo-img {
+    height: 36px;
+    width: auto;
+    display: block;
+}
 
 .nav-links {
     display: flex;
@@ -206,7 +202,7 @@ body {
 .tag {
     font-size: 14px;
     padding: 6px 14px;
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(255, 214, 0, 0.15);  /* Yellow background! */
     border-radius: 20px;
     color: var(--black);
     font-weight: 500;
@@ -216,16 +212,17 @@ body {
     display: inline-block;
     font-size: 17px;
     font-weight: 500;
-    color: white;
-    background: var(--blue);
+    color: var(--black);
+    background: var(--yellow);  /* Yellow button! */
     padding: 14px 32px;
     border-radius: 980px;
     text-decoration: none;
     transition: background 0.2s;
+    border: none;
 }
 
 .btn-primary:hover {
-    background: #0077ed;
+    background: var(--yellow-dark);
 }
 
 /* ===== About ===== */
@@ -264,7 +261,7 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 16px;
     text-decoration: none;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
     display: flex;
     flex-direction: column;
 }
@@ -272,6 +269,7 @@ body {
 .contact-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+    border-color: var(--yellow);  /* Yellow border on hover! */
 }
 
 .contact-label {
@@ -285,26 +283,103 @@ body {
 .contact-value {
     font-size: 21px;
     font-weight: 600;
-    color: var(--blue);
+    color: var(--black);
 }
 
 /* ===== Footer ===== */
 .footer {
-    padding: 48px 24px;
+    padding: 80px 24px;
     text-align: center;
     border-top: 1px solid rgba(0, 0, 0, 0.08);
+    background: #fafafa;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .footer p {
     font-size: 14px;
     color: var(--gray);
-}
-.footer-logo {
-    height: 24px;
-    margin-bottom: 16px;
-    opacity: 0.6;
+    margin: 0;
 }
 
+/* ===== Project Detail Pages ===== */
+.project-detail-page {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.back-link {
+    display: inline-block;
+    font-size: 17px;
+    color: var(--black);
+    margin-bottom: 40px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.back-link:hover {
+    opacity: 0.7;
+}
+
+.project-detail-page h1 {
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-bottom: 60px;
+    color: var(--black);
+}
+
+.project-detail h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-bottom: 24px;
+    color: var(--black);
+}
+
+.project-detail p {
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--gray);
+}
+
+.project-detail strong {
+    color: var(--black);
+    font-weight: 600;
+}
+
+.project-detail img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    margin: 40px 0;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.project-detail ul,
+.project-detail ol {
+    margin: 20px 0;
+    margin-left: 24px;
+}
+
+.project-detail li {
+    font-size: 19px;
+    line-height: 1.6;
+    color: var(--gray);
+    margin-bottom: 12px;
+}
+
+.project-detail iframe {
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+}
 
 /* ===== Responsive ===== */
 @media (max-width: 1024px) {
@@ -340,6 +415,10 @@ body {
         font-size: 12px;
     }
     
+    .logo-img {
+        height: 28px;
+    }
+    
     .hero-title {
         font-size: 40px;
     }
@@ -366,5 +445,25 @@ body {
     
     .contact-value {
         font-size: 18px;
+    }
+    
+    .project-detail-page h1 {
+        font-size: 36px;
+    }
+    
+    .project-detail h2 {
+        font-size: 24px;
+    }
+    
+    .project-detail p,
+    .project-detail li {
+        font-size: 17px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .footer {
+        background: #0a0a0a;
+        border-top-color: rgba(255, 255, 255, 0.08);
     }
 }
