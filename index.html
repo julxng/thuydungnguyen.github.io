@@ -3,78 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thuy Dung Nguyen - Artist & Creative Technologist</title>
-    <meta name="description" content="Portfolio of Thuy Dung Nguyen - Studio artist exploring haptic interfaces, biosensing, and interactive sound.">
+    <title>Thuy Dung Nguyen</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="container">
-            <h1>Thuy Dung Nguyen</h1>
-            <p class="subtitle">Studio artist and creative technologist exploring haptic interfaces, biosensing, and embodied interaction through sound</p>
+    <!-- Nav -->
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="#" class="nav-logo">Thuy Dung Nguyen</a>
+            <div class="nav-links">
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <!-- Main Content -->
-    <main class="container">
-        <!-- Projects Section -->
-        <section class="projects">
-            <h2>Work</h2>
-            <div class="project-grid">
-                <!-- PROJECT 1: Heartbeat Wearable -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="assets/heartbeat-wearable.jpg" alt="Heartbeat sharing wearable device">
-                    </div>
-                    <div class="project-content">
-                        <h3>Would You Understand</h3>
-                        <p class="project-description">A two-person prototype that captures heartbeats via smartphone camera and transmits them as haptic vibrations. Built with Arduino and vibrotactile actuators.</p>
-                        <a href="projects/wouldyouunderstand.html" class="project-link">View Project →</a>
-                    </div>
-                </article>
+    <!-- Hero -->
+    <section class="hero-full">
+        <div class="hero-content">
+            <h1 class="hero-title">Creating experiences at the intersection of art and technology</h1>
+            <p class="hero-subtitle">Studio artist exploring haptic interfaces, biosensing, and embodied interaction</p>
+        </div>
+    </section>
 
-                <!-- PROJECT 2: Sonic Exploration -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="assets/sonic-exploration.jpg" alt="Interactive sound installation">
+    <!-- Projects -->
+    <section id="work" class="section">
+        <div class="container-large">
+            <h2 class="section-title">Featured Work</h2>
+            
+            <!-- Project 1 -->
+            <article class="project-large">
+                <div class="project-visual">
+                    <img src="assets/heartbeat-wearable.jpg" alt="Would You Understand">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Would You Understand</h3>
+                    <p class="project-desc">A two-person wearable that shares heartbeats through haptic vibrations. Experience intimacy through physiological connection.</p>
+                    <div class="project-meta">
+                        <span class="tag">Arduino</span>
+                        <span class="tag">Haptics</span>
+                        <span class="tag">Biosensing</span>
                     </div>
-                    <div class="project-content">
-                        <h3>Sonic Exploration</h3>
-                        <p class="project-description">Interactive sound installation with 20 speakers and Arduino. Visitors identify sounds in a playful sonic puzzle that challenges perception and memory.</p>
-                        <a href="projects/sonic-exploration.html" class="project-link">View Project →</a>
+                    <a href="projects/wouldyouunderstand.html" class="btn-primary">View project</a>
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-large reverse">
+                <div class="project-visual">
+                    <img src="assets/sonic-exploration.jpg" alt="Sonic Exploration">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Sonic Exploration</h3>
+                    <p class="project-desc">An interactive sound installation with 20 speakers. Rediscover mindful presence through the sounds of everyday life.</p>
+                    <div class="project-meta">
+                        <span class="tag">MaxMSP</span>
+                        <span class="tag">Arduino</span>
+                        <span class="tag">Installation</span>
                     </div>
-                </article>
+                    <a href="projects/sonic-exploration.html" class="btn-primary">View project</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <p class="large-text">
+                    I'm a studio artist who codes, creating experiences that explore how technology can facilitate new forms of human connection and awareness.
+                </p>
+                <p>
+                    My work spans haptic interfaces, biosensing, and spatial audio—building prototypes with Arduino, MaxMSP, and vibrotactile systems. I'm interested in the emotional and perceptual dimensions of technology.
+                </p>
+                <p>
+                    <strong>BA Studio Arts, Bard College (2023)</strong><br>
+                    Applying to MIT Media Lab and creative technology programs
+                </p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- About Section -->
-        <section class="about">
-            <h2>About</h2>
-            <p>
-                I'm a studio artist who codes, working at the intersection of haptic interfaces, biosensing, and interactive sound. 
-                My practice explores how technology can create new forms of intimacy, mindfulness, and embodied experience.
-            </p>
-            <p>
-                I work primarily with Arduino hardware, vibrotactile actuators, smartphone sensing (rPPG), MaxMSP, and multi-channel 
-                audio systems. Currently developing projects for applications to creative technology graduate programs including MIT Media Lab.
-            </p>
-            <p><strong>Education:</strong> BA Studio Arts, Bard College (2023)</p>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="contact">
-            <h2>Get in Touch</h2>
-            <div class="contact-links">
-                <a href="mailto:your.email@example.com">Email</a>
-                <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a>
-                <a href="https://github.com/julxng" target="_blank">GitHub</a>
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-grid">
+                <a href="mailto:your.email@example.com" class="contact-card">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">your.email@example.com</span>
+                </a>
+                <a href="https://instagram.com/yourhandle" class="contact-card">
+                    <span class="contact-label">Instagram</span>
+                    <span class="contact-value">@yourhandle</span>
+                </a>
+                <a href="https://github.com/julxng" class="contact-card">
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">@julxng</span>
+                </a>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
-        <p>© 2025 Thuy Dung Nguyen</p>
+    <footer class="footer">
+        <p>© 2025 Thuy Dung Nguyen. All rights reserved.</p>
     </footer>
 </body>
 </html>
